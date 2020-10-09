@@ -5,6 +5,7 @@ import { CardsModule } from './cards/cards.module';
 import { BottomSheetModule } from './bottom-sheet/bottom-sheet.module';
 import { RippleModule } from './ripple/ripple.module';
 import { TextFieldModule } from './text-field/text-field.module';
+import { TextViewModule } from './text-view/text-view.module';
 import { SliderModule } from './slider/slider.module';
 import { ProgressModule } from './progress/progress.module';
 import { ActivityIndicatorModule } from './activity-indicator/activity-indicator.module';
@@ -19,6 +20,7 @@ import { TabsModule } from './tabs/tabs.module';
         BottomSheetModule,
         RippleModule,
         TextFieldModule,
+        TextViewModule,
         SliderModule,
         ProgressModule,
         ActivityIndicatorModule,

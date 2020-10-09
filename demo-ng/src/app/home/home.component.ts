@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
         'Card View',
         'Ripple',
         'Text Field',
+        "Text View",
         'Slider',
         'Progress',
         'Tabs'
