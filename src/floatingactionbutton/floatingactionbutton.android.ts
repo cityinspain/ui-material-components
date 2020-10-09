@@ -1,4 +1,5 @@
 import { dynamicElevationOffsetProperty, elevationProperty, rippleColorProperty } from '@nativescript-community/ui-material-core';
+import { createStateListAnimator, isPostLollipop } from '@nativescript-community/ui-material-core/android/utils';
 import { Background, Color, ImageSource, Length, backgroundInternalProperty, colorProperty } from '@nativescript/core';
 import { textProperty } from '@nativescript/core/ui/text-base';
 import { FloatingActionButtonBase, expandedProperty, imageSourceProperty, sizeProperty, srcProperty } from './floatingactionbutton-common';
@@ -14,7 +15,6 @@ export class FloatingActionButton extends FloatingActionButtonBase {
         }
         const view = new MDCFabButton(this._context);
         this.defaultPadding = view.getPaddingTop();
-        console.log('defaultPadding', this.defaultPadding);
         return view;
     }
 
@@ -38,13 +38,20 @@ export class FloatingActionButton extends FloatingActionButtonBase {
     }
 
     [elevationProperty.setNative](value: number) {
-        const newValue = Length.toDevicePixels(typeof value === 'string' ? Length.parse(value) : value, 0);
-        this.nativeViewProtected.setElevation(newValue);
+        if (isPostLollipop()) {
+            createStateListAnimator(this, this.nativeViewProtected);
+        } else {
+            const newValue = Length.toDevicePixels(typeof value === 'string' ? Length.parse(value) : value, 0);
+            androidx.core.view.ViewCompat.setElevation(this.nativeViewProtected, newValue);
+        }
     }
-
     [dynamicElevationOffsetProperty.setNative](value: number) {
-        // const newValue = Length.toDevicePixels(typeof value === 'string' ? Length.parse(value) : value, 0);
-        this.nativeViewProtected.setTranslationZ(value);
+        if (isPostLollipop()) {
+            createStateListAnimator(this, this.nativeViewProtected);
+        } else {
+            const newValue = Length.toDevicePixels(typeof value === 'string' ? Length.parse(value) : value, 0);
+            androidx.core.view.ViewCompat.setTranslationZ(this.nativeViewProtected, newValue);
+        }
     }
     [textProperty.setNative](value: string) {
         this.nativeViewProtected.setText(value);
@@ -85,7 +92,6 @@ export class FloatingActionButton extends FloatingActionButtonBase {
         this.nativeViewProtected.setRippleColor(android.content.res.ColorStateList.valueOf(color.android));
     }
     [expandedProperty.setNative](value: boolean) {
-        console.log('expandedProperty', value);
         if (value) {
             this.nativeViewProtected.extend();
         } else {

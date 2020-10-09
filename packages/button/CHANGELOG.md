@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.20](https://github.com/Akylas/nativescript-material-components/compare/v5.0.19...v5.0.20) (2020-10-09)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-button
+
+
+
+
+
+## [5.0.19](https://github.com/Akylas/nativescript-material-components/compare/v5.0.18...v5.0.19) (2020-10-09)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-button
+
+
+
+
+
+## [5.0.18](https://github.com/Akylas/nativescript-material-components/compare/v5.0.17...v5.0.18) (2020-10-09)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-button
+
+
+
+
+
+## [5.0.17](https://github.com/Akylas/nativescript-material-components/compare/v5.0.16...v5.0.17) (2020-10-09)
+
+
+### Bug Fixes
+
+* android use correct oultine button now. ([c9780cd](https://github.com/Akylas/nativescript-material-components/commit/c9780cd3e35a76ccfb343983cfac912f73862550))
+
+
+
+
+
+## [5.0.16](https://github.com/Akylas/nativescript-material-components/compare/v5.0.15...v5.0.16) (2020-10-08)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-button
+
+
+
+
+
+## [5.0.15](https://github.com/Akylas/nativescript-material-components/compare/v5.0.14...v5.0.15) (2020-10-08)
+
+
+### Bug Fixes
+
+* use @nativescript-community/text ([f07d497](https://github.com/Akylas/nativescript-material-components/commit/f07d497e10de4228215a7219c3d51ea3365cff57))
+
+
+
+
+
 ## [5.0.14](https://github.com/Akylas/nativescript-material-components/compare/v5.0.13...v5.0.14) (2020-10-02)
 
 **Note:** Version bump only for package @nativescript-community/ui-material-button

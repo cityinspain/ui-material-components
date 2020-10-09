@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.20](https://github.com/Akylas/nativescript-material-components/compare/v5.0.19...v5.0.20) (2020-10-09)
+
+
+### Bug Fixes
+
+* important ios fix to get default theme for everything! ([c326907](https://github.com/Akylas/nativescript-material-components/commit/c326907ffff1ef154e2a400b9a6f1773f76ff555))
+
+
+### Features
+
+* resolve action for AlertDialog ([629f68a](https://github.com/Akylas/nativescript-material-components/commit/629f68a65df5b9d9a2361a91cbb321134650be6c))
+
+
+
+
+
+## [5.0.19](https://github.com/Akylas/nativescript-material-components/compare/v5.0.18...v5.0.19) (2020-10-09)
+
+
+### Bug Fixes
+
+* ios fix ([8d4e2a1](https://github.com/Akylas/nativescript-material-components/commit/8d4e2a1ce78418acadeaeefaba05abec955c627f))
+
+
+
+
+
+## [5.0.18](https://github.com/Akylas/nativescript-material-components/compare/v5.0.17...v5.0.18) (2020-10-09)
+
+
+### Bug Fixes
+
+* **textfield:** ios fix for maxLength ([0218423](https://github.com/Akylas/nativescript-material-components/commit/0218423368e35abb614e9da09d31b7cf481d85c9))
+
+
+
+
+
+## [5.0.17](https://github.com/Akylas/nativescript-material-components/compare/v5.0.16...v5.0.17) (2020-10-09)
+
+
+### Bug Fixes
+
+* android use correct oultine button now. ([c9780cd](https://github.com/Akylas/nativescript-material-components/commit/c9780cd3e35a76ccfb343983cfac912f73862550))
+* rename maxLength to counterMaxLength ([ae41711](https://github.com/Akylas/nativescript-material-components/commit/ae4171106c2b2f1ca040fd3cd910c1d24be1bfb9))
+
+
+
+
+
+## [5.0.16](https://github.com/Akylas/nativescript-material-components/compare/v5.0.15...v5.0.16) (2020-10-08)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-components
+
+
+
+
+
+## [5.0.15](https://github.com/Akylas/nativescript-material-components/compare/v5.0.14...v5.0.15) (2020-10-08)
+
+
+### Bug Fixes
+
+* android fix for pre lollipop ([cfda47a](https://github.com/Akylas/nativescript-material-components/commit/cfda47ab47bda63484b167e49d52d125a7633398))
+* use @nativescript-community/text ([f07d497](https://github.com/Akylas/nativescript-material-components/commit/f07d497e10de4228215a7219c3d51ea3365cff57))
+* **angular:** fix ng-packagr ivy warning ([a3409db](https://github.com/Akylas/nativescript-material-components/commit/a3409db8418e4d81d0f7f46570d6cd0a75859769))
+* **angular:** wrong ng package dest for tabs ([4d70aad](https://github.com/Akylas/nativescript-material-components/commit/4d70aade33f5b7b5aeddd4a450bbb260eaa32451))
+* **ng-demo:** add Podfile with min version 10 ([a6ea95a](https://github.com/Akylas/nativescript-material-components/commit/a6ea95a4c6fcd9c57ae86a5d60be1eed782800b7))
+
+
+### Features
+
+* **ng-demo:** add Tabs example ([aac0e85](https://github.com/Akylas/nativescript-material-components/commit/aac0e8551020750872499bc4b6e8b42f0038a9fb))
+
+
+
+
+
 ## [5.0.14](https://github.com/Akylas/nativescript-material-components/compare/v5.0.13...v5.0.14) (2020-10-02)
 
 
