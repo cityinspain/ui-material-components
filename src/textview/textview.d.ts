@@ -10,7 +10,7 @@ export class TextView extends EditableTextBase {
      * @iOS : MDCMultilineTextField
      */
     nativeViewProtected: any;
-
+    color: Color;
     helper: string;
     helperColor: Color;
     counterMaxLength: number;

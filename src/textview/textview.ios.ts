@@ -3,6 +3,7 @@ import {
     buttonColorProperty,
     counterMaxLengthProperty,
     errorColorProperty,
+    colorProperty,
     errorProperty,
     floatingColorProperty,
     floatingInactiveColorProperty,
@@ -310,6 +311,16 @@ export class TextView extends TextViewBase {
         const color = value instanceof Color ? value.ios : value;
         this._controller.textInputClearButtonTintColor = color;
     }
+    [colorProperty.setNative](value: Color | { textColor: UIColor; tintColor: UIColor }) {
+		if (value instanceof Color) {
+			let color = value instanceof Color ? value.ios : value;
+			this.nativeTextViewProtected.textColor = color;
+			this.nativeTextViewProtected.tintColor = color;
+		} else {
+			this.nativeTextViewProtected.textColor = value.textColor;
+			this.nativeTextViewProtected.tintColor = value.tintColor;
+		}
+	}
     [helperProperty.setNative](value: string) {
         this._controller.helperText = value;
     }

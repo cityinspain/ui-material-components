@@ -5,13 +5,13 @@
 
 ## Installation
 
-### Warning :warning: :warning: 
+> #### :warning: Warning :warning:
 From 5.x using material component will break N tab component on iOS (which is bound to be removed). This is needed to allow using the latest native iOS features. If needed you can use either [bottomnavigationbar](https://www.npmjs.com/package/nativescript-material-bottomnavigationbar) (this one is the best choice, closest to material design) or [tabs](https://www.npmjs.com/package/nativescript-material-tabs) (clone of N one, but with a little less features)
 
-For N 7.0
+**NativeScript 7.x**
 * `tns plugin add @nativescript-community/ui-material-cardview`
 
-For N 6.x
+**NativeScript 6.x**
 * `tns plugin add nativescript-material-cardview`
 
 If using ```tns-core-modules```
@@ -29,14 +29,14 @@ inside ```App_ressources/android/res/values/styles.xml``` replace all occurences
 
 ##### [Material Design Spec](https://material.io/design/components/cardviews.html)
 
-### Usage
+## Usage
 
 
-## Plain NativeScript
+### Plain NativeScript
 
 <span style="color:red">IMPORTANT: </span>_Make sure you include `xmlns:mdc="@nativescript-community/ui-material-cardview"` on the Page element_
 
-### XML
+##### XML
 
 ```XML
 <Page xmlns:mdc="@nativescript-community/ui-material-cardview">
@@ -47,7 +47,7 @@ inside ```App_ressources/android/res/values/styles.xml``` replace all occurences
 </Page>
 ```
 
-### CSS
+##### CSS
 
 ```CSS
 mdccardview {
@@ -56,7 +56,7 @@ mdccardview {
 }
 ```
 
-## NativeScript + Angular
+### NativeScript + Angular
 
 ```typescript
 import { NativeScriptMaterialCardViewModule } from "@nativescript-community/ui-material-cardview/angular";
@@ -74,7 +74,7 @@ import { NativeScriptMaterialCardViewModule } from "@nativescript-community/ui-m
 <MDCardView rippleColor="blue"  width="100" height="100"></MDCardView>
 ```
 
-## NativeScript + Vue
+### NativeScript + Vue
 
 ```javascript
 import Vue from 'nativescript-vue';
@@ -91,12 +91,8 @@ Vue.use(CardViewPlugin);
 
 Inherite from Nativescript [StackLayout](https://docs.nativescript.org/ui/layouts/layout-containers#stacklayout-properties)
 
-## Attributes
 
-* **elevation** _optional_
-
-An attribute to set the elevation of the cardview. This will increase the 'drop-shadow' of the cardview.
-
-* **rippleColor** _optional_
-
-An attribute to set the ripple color of the cardview.
+| Property   | Type | Required | Description  |
+|------------|------|----------|--------------|
+| elevation  | ?    | false    | Sets the elevation of the cardview, increasing its 'drop shadow'.
+| rippleColor| Color| false    | Sets the ripple color of the cardview

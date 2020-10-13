@@ -15,29 +15,34 @@ Nativescript plugin for Android & iOS to have the Bottom Navigation Bar followin
 5.  [Css Styling](#css-styling)
 6.  [API](#api)
 
-### Prerequisites / Requirements
+## Getting Started
+### Prerequisites
 
-You need the version of NS6 or later to use this plugin.
+This plugin requires NativeScript 6.0 or higher.
 
 ### Installation
-For N 7.0
-* `tns plugin add @nativescript-community/ui-material-bottomnavigationbar`
+**NativeScript 7.x**
 
-For N 6.x
-* `tns plugin add nativescript-material-bottomnavigationbar`
+`tns plugin add @nativescript-community/ui-material-activityindicator`
 
-### NEW FEATURES
+**NativeScript 6.x**
+
+`tns plugin add nativescript-material-activityindicator`
+
+<!-- ### NEW FEATURES
 
 -   `Badge` now are supported using the method: `showBadge(index, value)`
-    -   NOTE: if you want to show a badge as a red dot no value should be passed to the function.
+    -   NOTE: if you want to show a badge as a red dot no value should be passed to the function. -->
 
 ### Usage
 
-Before start using the plugin you need to add the icons for Android & iOS in your `App_Resources` directory.
+<!-- Before start using the plugin you need to add the icons for Android & iOS in your `App_Resources` directory. -->
 
-#### XML
+#### Vanilla NativeScript
 
-You can set the tabs using the `tabs` property
+##### XML
+
+You can set the tabs using the `tabs` property.
 
 ```xml
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
@@ -115,7 +120,7 @@ or you can add the tabs directly in your xml view
 
 #### Angular
 
-First you need to include the `NativeScriptMaterialBottomNavigationBarModule` in your `app.module.ts``
+Add the `NativeScriptMaterialBottomNavigationBarModule` into your `module.ts` file
 
 ```typescript
 import { NativeScriptMaterialBottomNavigationBarModule} from "@nativescript-community/ui-material-bottomnavigationbar/angular";
@@ -169,7 +174,7 @@ or you can declare the `BottomNavigationTab` in your html directly
 
 #### Vue
 
-If you want to use this plugin with Vue, do this in your `app.js` or `main.js`:
+In your `app.js` or `main.js`:
 
 ```javascript
 import BottomNavigationBar from '@nativescript-community/ui-material-bottomnavigationbar/vue';
@@ -177,7 +182,7 @@ import BottomNavigationBar from '@nativescript-community/ui-material-bottomnavig
 Vue.use(BottomNavigationBar);
 ```
 
-This will install and register `BottomNavigationBar` and `BottomNavigationTab` components to your `Vue` instance and now you can use the plugin as follows:
+In your template:
 
 ```html
 <GridLayout rows="*, auto">
@@ -192,14 +197,14 @@ This will install and register `BottomNavigationBar` and `BottomNavigationTab` c
 </GridLayout>
 ```
 
-You can find more information of how to use nativescript plugins with Vue [Here!](https://nativescript-vue.org/en/docs/getting-started/nativescript-plugins/)
+You can find more information of how to use nativescript plugins with Vue [here!](https://nativescript-vue.org/en/docs/getting-started/nativescript-plugins/)
 
 #### CSS Styling
 
 You can also use your css file to set or change the `activeColor`, `inactiveColor` & `backgroundColor` of the Bottom Navigation Bar.
 
 ```css
-.botom-nav {
+BottomNavigationBar {
     active-color: green;
     inactive-color: black;
     background-color: blue;

@@ -5,14 +5,16 @@
 
 ## Installation
 
-### Warning :warning: :warning: 
+> #### Warning :warning: :warning:
 From 5.x using material component will break N tab component on iOS (which is bound to be removed). This is needed to allow using the latest native iOS features. If needed you can use either [bottomnavigationbar](https://www.npmjs.com/package/nativescript-material-bottomnavigationbar) (this one is the best choice, closest to material design) or [tabs](https://www.npmjs.com/package/nativescript-material-tabs) (clone of N one, but with a little less features)
 
-For N 7.0
-* `tns plugin add @nativescript-community/ui-material-textview`
+**NativeScript 7.x**
 
-For N 6.x
-* `tns plugin add nativescript-material-textview`
+`tns plugin add @nativescript-community/ui-material-textview`
+
+**NativeScript 6.x**
+
+`tns plugin add nativescript-material-textview`
 
 If using ```tns-core-modules```
 * `tns plugin add nativescript-material-textview@2.5.4`
@@ -103,18 +105,10 @@ Inherite from Nativescript [TextView](https://docs.nativescript.org/ui/ns-ui-wid
 
 ## Attributes
 
-* **variant** _optional_
-
-An attribute to set the variant of the textview. Can be ```outline``` or ```underline``` or ```filled```. No value means ```underline``` textview
-
-* **errorColor** _optional_
-
-An attribute to set the error color of the textview.
-
-* **helper** _optional_
-
-An attribute to set the helper text of the textview.
-
-* **floating** _optional_
-
-A boolean attribute to set the floating state of the textview.
+| Property  | Type | Required | Description  |
+|-----------|------|----------|--------------|
+| variant  | string |  false  | Set the textfield variant. Options are `outline`, `underline`, or `filled`. Defaults to `underline`.  |
+| errorColor | Color | false | Sets the color of the error text |
+| helper | string | false | Sets the helper text |
+| helperColor | Color | false | Sets the color of the helper text  |
+| floating | boolean | false | ** wip ** |

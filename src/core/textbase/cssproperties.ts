@@ -1,5 +1,12 @@
 import { Color, CssProperty, Style, booleanConverter } from '@nativescript/core';
 
+export const colorProperty = new CssProperty<Style, Color>({
+    name: 'color',
+    cssName: 'color',
+    equalityComparer: Color.equals,
+    valueConverter: v => new Color(v)
+});
+colorProperty.register(Style);
 export const errorColorProperty = new CssProperty<Style, Color>({
     name: 'errorColor',
     cssName: 'error-color',

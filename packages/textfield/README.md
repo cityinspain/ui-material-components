@@ -3,16 +3,21 @@
 [![GitHub forks](https://img.shields.io/github/forks/Akylas/nativescript-material-components.svg)](https://github.com/Akylas/nativescript-material-components/network)
 [![GitHub stars](https://img.shields.io/github/stars/Akylas/nativescript-material-components.svg)](https://github.com/Akylas/nativescript-material-components/stargazers)
 
+# NativeScript Material Text Field
+
 ## Installation
 
-### Warning :warning: :warning: 
-From 5.x using material component will break N tab component on iOS (which is bound to be removed). This is needed to allow using the latest native iOS features. If needed you can use either [bottomnavigationbar](https://www.npmjs.com/package/nativescript-material-bottomnavigationbar) (this one is the best choice, closest to material design) or [tabs](https://www.npmjs.com/package/nativescript-material-tabs) (clone of N one, but with a little less features)
+###  
+> #### :warning: Warning :warning:
+>From 5.x using material component will break N tab component on iOS (which is bound to be removed). This is needed to allow using the latest native iOS features. If needed you can use either [bottomnavigationbar](https://www.npmjs.com/package/nativescript-material-bottomnavigationbar) (this one is the best choice, closest to material design) or [tabs](https://www.npmjs.com/package/nativescript-material-tabs) (clone of N one, but with a little less features)
 
-For N 7.0
-* `tns plugin add @nativescript-community/ui-material-textfield`
+**NativeScript 7.x**
 
-For N 6.x
-* `tns plugin add nativescript-material-textfield`
+`tns plugin add @nativescript-community/ui-material-textfield`
+
+**NativeScript 6.x**
+
+`tns plugin add nativescript-material-textfield`
 
 If using ```tns-core-modules```
 * `tns plugin add nativescript-material-textfield@2.5.4`
@@ -23,14 +28,14 @@ Be sure to run a new build after adding plugins to avoid any issues.
 
 ##### [Material Design Spec](https://material.io/design/components/text-fields.html)
 
-### Usage
+## Usage
 
 
-## Plain NativeScript
+### Plain NativeScript
 
 <span style="color:red">IMPORTANT: </span>_Make sure you include `xmlns:mdt="@nativescript-community/ui-material-textfield"` on the Page element_
 
-### XML
+##### XML
 
 ```XML
 <Page xmlns:mdt="@nativescript-community/ui-material-textfield">
@@ -43,7 +48,7 @@ Be sure to run a new build after adding plugins to avoid any issues.
 </Page>
 ```
 
-### CSS
+##### CSS
 
 ```CSS
 mdctextfield {
@@ -56,7 +61,7 @@ mdctextfield {
 }
 ```
 
-## NativeScript + Angular
+### NativeScript + Angular
 
 ```typescript
 import { NativeScriptMaterialTextFieldModule } from "@nativescript-community/ui-material-textfield/angular";
@@ -76,7 +81,7 @@ import { NativeScriptMaterialTextFieldModule } from "@nativescript-community/ui-
         (textChange)="onTextChange($event)"></MDTextField>
 ```
 
-## NativeScript + Vue
+### NativeScript + Vue
 
 ```javascript
 import TextFieldPlugin from '@nativescript-community/ui-material-textfield/vue';
@@ -99,22 +104,12 @@ Also, you can bind the text to some instance data using the `v-model` directive:
 
 ## Attributes
 
-Inherite from Nativescript [TextField](https://docs.nativescript.org/ui/ns-ui-widgets/text-field) so it already has all the same attributes
+This plugin extends Nativescript's [TextField](https://docs.nativescript.org/ui/ns-ui-widgets/text-field) component, so it inherits all attributes from it.
 
-## Attributes
-
-* **variant** _optional_
-
-An attribute to set the variant of the textfield. Can be ```outline``` or ```underline``` or ```filled```. No value means ```underline``` textfield
-
-* **errorColor** _optional_
-
-An attribute to set the error color of the textfield.
-
-* **helper** _optional_
-
-An attribute to set the helper text of the textfield.
-
-* **floating** _optional_
-
-A boolean attribute to set the floating state of the textfield.
+| Property  | Type | Required | Description  |
+|-----------|------|----------|--------------|
+| variant  | string |  false  | Set the textfield variant. Options are `outline`, `underline`, or `filled`. Defaults to `underline`.  |
+| errorColor | Color | false | Sets the color of the error text |
+| helper | string | false | Sets the helper text |
+| helperColor | Color | false | Sets the color of the helper text  |
+| floating | boolean | false | ** wip ** |

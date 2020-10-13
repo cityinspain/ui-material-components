@@ -6,6 +6,7 @@ export abstract class TextViewBase extends NSTextView {
     abstract requestFocus();
     abstract clearFocus();
 
+    @cssProperty color: Color;
     @cssProperty helper: string;
     @cssProperty helperColor: Color;
     @cssProperty counterMaxLength: number;

@@ -9,19 +9,22 @@ Use the Material Design Dialogs in your {N} app
 
 ## Installation
 
-### Warning :warning: :warning: 
+### Warning :warning: :warning:
 From 5.x using material component will break N tab component on iOS (which is bound to be removed). This is needed to allow using the latest native iOS features. If needed you can use either [bottomnavigationbar](https://www.npmjs.com/package/nativescript-material-bottomnavigationbar) (this one is the best choice, closest to material design) or [tabs](https://www.npmjs.com/package/nativescript-material-tabs) (clone of N one, but with a little less features)
 
-For N 7.0
-* `tns plugin add @nativescript-community/ui-material-dialogs`
+**NativeScript 7.x**
 
-For N 6.x
-* `tns plugin add nativescript-material-dialogs`
+`tns plugin add @nativescript-community/ui-material-dialogs`
+
+**NativeScript 6.x**
+
+`tns plugin add nativescript-material-dialogs`
 
 If using ```tns-core-modules```
-* `tns plugin add nativescript-material-dialogs@2.5.4`
 
-## [Changelog](./CHANGELOG.md)
+`tns plugin add nativescript-material-dialogs@2.5.4`
+
+<!-- ## [Changelog](./CHANGELOG.md) -->
 
 ## Usage
 
