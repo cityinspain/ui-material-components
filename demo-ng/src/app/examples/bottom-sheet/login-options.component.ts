@@ -9,6 +9,8 @@ import { ItemEventData } from '@nativescript/core/ui/list-view';
 export class LoginOptionsComponent implements OnInit {
     options: string[];
 
+    showExtraContent: boolean = false;
+
     constructor(private params: BottomSheetParams) {}
 
     ngOnInit() {
@@ -17,5 +19,11 @@ export class LoginOptionsComponent implements OnInit {
 
     onTap({ index }: ItemEventData) {
         this.params.closeCallback(this.options[index]);
+    }
+
+    // toggle the 'extra content' gridlayout in row 1.
+    // this causes the sliding issue to occur.
+    toggleExtraContent() {
+        this.showExtraContent = !this.showExtraContent;
     }
 }

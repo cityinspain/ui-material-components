@@ -1,14 +1,9 @@
-<ListView
-    [items]="options"
-    (itemTap)="onTap($event)"
-    separatorColor="white"
-    class="list-group"
-    height="200"
->
-    <ng-template let-option="item">
-        <Label
-            class="list-group-item"
-            [text]="option"
-        ></Label>
-    </ng-template>
-</ListView>
+<GridLayout rows="auto auto" height="300">
+    <!-- highlighted in red to demonstrate movement -->
+    <GridLayout row="0" backgroundColor="red" verticalAlignment="top">
+        <Button (tap)="toggleExtraContent()" text="Toggle extra content"></Button>
+    </GridLayout>
+    <GridLayout row="1" *ngIf="showExtraContent">
+        <Label text="Extra content"></Label>
+    </GridLayout>
+</GridLayout>
