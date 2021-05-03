@@ -84,21 +84,22 @@ MDTabContentItem.special {
 
 MDTabStrip {
   color: skyblue;
+    selected-item-color: white;
+    un-selected-item-color: blue;
+    highlight-color: yellow;
+    background-color: green;
 }
 
 MDTabStripItem.special {
   color: teal;
 }
 
-MDTabStripItem.special:active {
-  color: yellowgreen;
-}
-
-MDTabStripItem.nested Label {
+MDTabStripItem.nested {
   color: teal;
 }
 
-MDTabStripItem.nested:active Label {
+MDTabStripItem:highlighted {
+    background-color: red;
   color: yellowgreen;
 }
 

@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.30](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.29...v5.2.30) (2021-05-03)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.29](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.28...v5.2.29) (2021-04-28)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.28](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.27...v5.2.28) (2021-04-28)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.27](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.26...v5.2.27) (2021-04-27)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.26](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.25...v5.2.26) (2021-04-26)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.25](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.24...v5.2.25) (2021-04-22)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.24](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.23...v5.2.24) (2021-04-20)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.23](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.22...v5.2.23) (2021-04-20)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.22](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.21...v5.2.22) (2021-04-16)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.21](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.20...v5.2.21) (2021-04-16)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.20](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.19...v5.2.20) (2021-04-12)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
+## [5.2.19](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.18...v5.2.19) (2021-04-08)
+
+**Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
+
+
+
+
+
 ## [5.2.18](https://github.com/nativescript-community/ui-material-components/tree/master/packages/bottomsheet/compare/v5.2.17...v5.2.18) (2021-04-07)
 
 **Note:** Version bump only for package @nativescript-community/ui-material-bottomsheet
