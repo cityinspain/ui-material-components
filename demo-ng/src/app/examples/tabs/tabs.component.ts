@@ -6,5 +6,6 @@ import { Component, OnInit } from '@angular/core';
     moduleId: module.id
 })
 export class TabsComponent implements OnInit {
-    ngOnInit() { }
+    items = [1, 2, 3, 4, 5, 6, 7];
+    ngOnInit() {}
 }
